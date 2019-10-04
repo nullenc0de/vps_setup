@@ -3,6 +3,9 @@
 #update
 apt update
 
+#Wapiti
+apt install wapiti -y
+
 #screen
 sudo apt-get install screen -y
 
