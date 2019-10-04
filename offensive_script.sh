@@ -8,6 +8,7 @@ wget https://gist.githubusercontent.com/nullenc0de/9cb36260207924f8e1787279a05eb
 
 #update
 apt update
+apt install python3-pip -y
 
 #Wapiti
 apt install wapiti -y
