@@ -33,19 +33,20 @@ apt-get install -y nmap
 # Amass
 apt-get install -y amass
 
+# Masscan
+apt-get install -y masscan
+
 # MassDNS
 apt-get install -y gcc make libpcap-dev
 git clone https://github.com/blechschmidt/massdns.git /opt/massdns || git -C /opt/massdns pull
 cd /opt/massdns
 make
 ln -s /opt/massdns/bin/massdns /usr/local/bin/massdns
+cd /opt
 
 #Brutex
 git clone https://github.com/1N3/BruteX.git || git -C /opt/Brutex pull
 /opt/Brutex/install.sh
-
-# Masscan
-apt-get install -y masscan
 
 #Wayback urls
 sudo git clone https://github.com/si9int/cc.py.git /opt/cc.py || git -C /opt/cc.py pull
