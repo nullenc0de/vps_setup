@@ -1,3 +1,8 @@
+#!/bin/bash
+
+#update
+apt update
+
 #screen
 sudo apt-get install screen -y
 
