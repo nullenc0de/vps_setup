@@ -1,3 +1,21 @@
+#screen
+sudo apt-get install screen -y
+
+#Brutespray
+apt-get install brutespray -y
+
+#eyewitness
+apt-get install witness -y
+
+#fimap
+sudo apt-get install fimap -y
+
+#sqlmap
+sudo apt-get install commix -y
+
+#sqlmap
+sudo apt-get install sqlmap -y
+
 # Gobuster
 apt-get install -y gobuster
 
@@ -14,12 +32,18 @@ cd /opt/massdns
 make
 ln -s /opt/massdns/bin/massdns /usr/local/bin/massdns
 
+#Brutex
+git clone https://github.com/1N3/BruteX.git || git -C /opt/Brutex pull
+/opt/Brutex/install.sh
+
 # Masscan
-apt-get install -y gcc make libpcap-dev
-git clone https://github.com/robertdavidgraham/masscan /opt/masscan || git -C /opt/masscan pull
-cd /opt/masscan
-make
-ln -s /opt/masscan/bin/masscan /usr/local/bin/masscan
+apt-get install -y masscan
+
+#Wayback urls
+sudo git clone https://github.com/si9int/cc.py.git /opt/cc.py || git -C /opt/cc.py pull
+
+#tehbucketeer
+sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
 # Subfinder
 export GOPATH=/opt/subfinder
@@ -62,6 +86,11 @@ export GOPATH=/opt/gowitness
 go get -u github.com/sensepost/gowitness
 ln -s /opt/gowitness/bin/gowitness /usr/local/bin/gowitness
 
+#Altdns
+git clone https://github.com/infosec-au/altdns.git /opt/altgen || git -C /opt/altdns pull
+pip3 install -r /opt/altdns/requirements.txt
+python3 /opt/altdns/setup.py install
+
 # Dnsgen
 git clone https://github.com/ProjectAnte/dnsgen /opt/dnsgen || git -C /opt/dnsgen pull
 pip3 install -r /opt/dnsgen/requirements.txt
@@ -77,12 +106,6 @@ git clone https://github.com/TheRook/subbrute.git /opt/subbrute || git -C /opt/s
 ln -s /opt/subbrute/subbrute.py /usr/local/bin/subbrute
 chmod +x /usr/local/bin/subbrute
 
-# Brutespray
-git clone https://github.com/x90skysn3k/brutespray.git /opt/brutespray || git -C /opt/brutespray pull
-pip3 install -r /opt/brutespray/requirements.txt
-ln -s /opt/brutespray/brutespray.py /usr/local/bin/brutespray
-chmod +x /usr/local/bin/brutespray
-
 # Striker
 git clone https://github.com/s0md3v/Striker.git /opt/striker || git -C /opt/striker pull
 pip3 install -r /opt/striker/requirements.txt
@@ -94,3 +117,7 @@ git clone https://github.com/s0md3v/XSStrike.git /opt/xsstrike || git -C /opt/xs
 pip3 install -r /opt/xsstrike/requirements.txt
 ln -s /opt/xsstrike/xsstrike.py /usr/local/bin/xsstrike
 chmod +x /usr/local/bin/xsstrike
+
+#Configure MSF
+sudo service postgresql start
+msfdb init
