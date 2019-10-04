@@ -1,5 +1,10 @@
 #!/bin/bash
 
+mkdir /root/gist
+wget https://gist.githubusercontent.com/nullenc0de/96fb9e934fc16415fbda2f83f08b28e7/raw/146f367110973250785ced348455dc5173842ee4/content_discovery_nullenc0de.txt -O /root/gist/content_discovery_nullenc0de.txt
+wget https://gist.githubusercontent.com/nullenc0de/538bc891f44b6e8734ddc6e151390015/raw/a6cb6c7f4fcb4b70ee8f27977886586190bfba3d/passwords.txt -O /root/gist/passwords.txt
+wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -O /root/gist/all.txt
+
 #update
 apt update
 
@@ -13,7 +18,7 @@ sudo apt-get install screen -y
 apt-get install brutespray -y
 
 #eyewitness
-apt-get install witness -y
+apt-get install eyewitness -y
 
 #fimap
 sudo apt-get install fimap -y
@@ -35,6 +40,10 @@ apt-get install -y amass
 
 # Masscan
 apt-get install -y masscan
+
+# Parameth
+git clone https://github.com/maK-/parameth.git || git -C /opt/parameth pull
+pip3 install -r /opt/parameth/requirements.txt
 
 # MassDNS
 apt-get install -y gcc make libpcap-dev
