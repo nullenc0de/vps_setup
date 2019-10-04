@@ -107,7 +107,7 @@ go get -u github.com/sensepost/gowitness
 ln -s /opt/gowitness/bin/gowitness /usr/local/bin/gowitness
 
 #Altdns
-git clone https://github.com/infosec-au/altdns.git /opt/altgen || git -C /opt/altdns pull
+git clone https://github.com/infosec-au/altdns.git /opt/altdns || git -C /opt/altdns pull
 pip3 install -r /opt/altdns/requirements.txt
 python3 /opt/altdns/setup.py install
 
