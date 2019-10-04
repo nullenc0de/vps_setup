@@ -47,6 +47,10 @@ apt-get install -y masscan
 git clone https://github.com/maK-/parameth.git /opt/parameth || git -C /opt/parameth pull
 pip3 install -r /opt/parameth/requirements.txt
 
+# Linkfinder
+git clone https://github.com/GerbenJavado/LinkFinder.git || git -C /opt/LinkFinder pull
+python3 /opt/LinkFinder/setup.py install
+
 # MassDNS
 apt-get install -y gcc make libpcap-dev
 git clone https://github.com/blechschmidt/massdns.git /opt/massdns || git -C /opt/massdns pull
