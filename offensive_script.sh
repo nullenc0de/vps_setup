@@ -44,7 +44,7 @@ apt-get install -y amass
 apt-get install -y masscan
 
 # Parameth
-git clone https://github.com/maK-/parameth.git || git -C /opt/parameth pull
+git clone https://github.com/maK-/parameth.git /opt/parameth || git -C /opt/parameth pull
 pip3 install -r /opt/parameth/requirements.txt
 
 # MassDNS
