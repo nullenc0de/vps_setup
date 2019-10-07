@@ -12,16 +12,14 @@ apt install python3-pip -y
 sudo apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
 
 #Wapiti
-apt install wapiti -y
+pip install wapiti3
+pip3 install wapiti3
 
 #screen
 sudo apt-get install screen -y
 
 #Brutespray
 apt-get install brutespray -y
-
-#fimap
-sudo apt-get install fimap -y
 
 #commix
 sudo apt-get install commix -y
