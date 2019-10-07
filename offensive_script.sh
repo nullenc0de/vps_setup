@@ -9,7 +9,8 @@ wget https://gist.githubusercontent.com/nullenc0de/9cb36260207924f8e1787279a05eb
 #update
 apt update
 apt install python3-pip -y
-sudo apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
+apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
+apt-get install libcurl4-openssl-dev apt-get install libpcre3-dev apt-get install libssh-dev -y
 
 #Wapiti
 pip install wapiti3
