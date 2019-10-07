@@ -42,6 +42,8 @@ apt-get install -y masscan
 
 # Arjun
 git clone https://github.com/s0md3v/Arjun.git /opt/Arjun || git -C /opt/parameth pull
+ln -s /opt/Arjun/arjun.py /usr/local/bin/arjun
+chmod +x /usr/local/bin/arjun
 
 # Linkfinder
 git clone https://github.com/GerbenJavado/LinkFinder.git || git -C /opt/LinkFinder pull
@@ -119,3 +121,4 @@ msfdb init
 
 #Snp13r
 git clone https://github.com/1N3/Sn1per.git /opt/Sn1p3r || git -C /opt/Sn1p3r pull
+bash /opt/Sn1p3r/install.sh
