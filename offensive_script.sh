@@ -19,13 +19,10 @@ sudo apt-get install screen -y
 #Brutespray
 apt-get install brutespray -y
 
-#eyewitness
-apt-get install eyewitness -y
-
 #fimap
 sudo apt-get install fimap -y
 
-#sqlmap
+#commix
 sudo apt-get install commix -y
 
 #sqlmap
@@ -43,36 +40,20 @@ apt-get install -y amass
 # Masscan
 apt-get install -y masscan
 
-# Parameth
-git clone https://github.com/maK-/parameth.git /opt/parameth || git -C /opt/parameth pull
-pip3 install -r /opt/parameth/requirements.txt
+# Arjun
+git clone https://github.com/s0md3v/Arjun.git /opt/Arjun || git -C /opt/parameth pull
 
 # Linkfinder
 git clone https://github.com/GerbenJavado/LinkFinder.git || git -C /opt/LinkFinder pull
 python3 /opt/LinkFinder/setup.py install
 
-# MassDNS
-apt-get install -y gcc make libpcap-dev
-git clone https://github.com/blechschmidt/massdns.git /opt/massdns || git -C /opt/massdns pull
-cd /opt/massdns
-make
-ln -s /opt/massdns/bin/massdns /usr/local/bin/massdns
-cd /opt
-
-#Brutex
-git clone https://github.com/1N3/BruteX.git || git -C /opt/Brutex pull
-/opt/Brutex/install.sh
-
-#Wayback urls
-sudo git clone https://github.com/si9int/cc.py.git /opt/cc.py || git -C /opt/cc.py pull
-
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
-# Subfinder
-export GOPATH=/opt/subfinder
-go get github.com/subfinder/subfinder
-ln -s /opt/subfinder/bin/subfinder /usr/local/bin/subfinder
+#fff
+export GOPATH=/opt/fff
+go get -u github.com/tomnomnom/hacks/fff
+ln -s /opt/fff/bin/fff /usr/local/bin/fff
 
 # HTTProbe
 export GOPATH=/opt/httprobe
@@ -110,16 +91,6 @@ export GOPATH=/opt/gowitness
 go get -u github.com/sensepost/gowitness
 ln -s /opt/gowitness/bin/gowitness /usr/local/bin/gowitness
 
-#Altdns
-git clone https://github.com/infosec-au/altdns.git /opt/altdns || git -C /opt/altdns pull
-pip3 install -r /opt/altdns/requirements.txt
-python3 /opt/altdns/setup.py install
-
-# Dnsgen
-git clone https://github.com/ProjectAnte/dnsgen /opt/dnsgen || git -C /opt/dnsgen pull
-pip3 install -r /opt/dnsgen/requirements.txt
-python3 /opt/dnsgen/setup.py install
-
 # Dirsearch
 git clone https://github.com/maurosoria/dirsearch.git /opt/dirsearch || git -C /opt/dirsearch pull
 ln -s /opt/dirsearch/dirsearch.py /usr/local/bin/dirsearch
@@ -145,3 +116,6 @@ chmod +x /usr/local/bin/xsstrike
 #Configure MSF
 sudo service postgresql start
 msfdb init
+
+#Snp13r
+git clone https://github.com/1N3/Sn1per.git /opt/Sn1p3r || git -C /opt/Sn1p3r pull
