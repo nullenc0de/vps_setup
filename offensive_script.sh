@@ -9,6 +9,7 @@ wget https://gist.githubusercontent.com/nullenc0de/9cb36260207924f8e1787279a05eb
 #update
 apt update
 apt install python3-pip -y
+sudo apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
 
 #Wapiti
 apt install wapiti -y
