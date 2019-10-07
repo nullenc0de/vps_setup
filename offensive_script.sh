@@ -39,6 +39,12 @@ apt-get install -y amass
 # Masscan
 apt-get install -y masscan
 
+#Kadimus
+git clone https://github.com/P0cL4bs/Kadimus.git /opt/Kadimus || git -C /opt/kadimus pull
+cd /opt/Kadimus
+make
+cd ..
+
 # Arjun
 git clone https://github.com/s0md3v/Arjun.git /opt/Arjun || git -C /opt/parameth pull
 ln -s /opt/Arjun/arjun.py /usr/local/bin/arjun
@@ -46,7 +52,9 @@ chmod +x /usr/local/bin/arjun
 
 # Linkfinder
 git clone https://github.com/GerbenJavado/LinkFinder.git || git -C /opt/LinkFinder pull
-python3 /opt/LinkFinder/setup.py install
+cd /opt/LinkFinder
+python3 setup.py install
+cd ..
 
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
