@@ -60,6 +60,11 @@ cd ..
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+#subjack
+export GOPATH=/opt/subjack
+go get github.com/haccer/subjack
+ln -s /opt/subjack/bin/subjack /usr/local/bin/subjack
+
 #fff
 export GOPATH=/opt/fff
 go get -u github.com/tomnomnom/hacks/fff
