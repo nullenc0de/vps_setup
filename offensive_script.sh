@@ -67,6 +67,7 @@ ln -s /opt/subjack/bin/subjack /usr/local/bin/subjack
 
 #gwdomains
 export GOPATH=/opt/gwdomains
+export GO111MODULE=on
 go get -u github.com/fuzzerk/gwdomains
 ln -s /opt/gwdomains/bin/gwdomains /usr/local/bin/gwdomains
 
