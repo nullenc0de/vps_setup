@@ -143,5 +143,5 @@ sudo service postgresql start
 msfdb init
 
 #Snp13r
-git clone https://github.com/1N3/Sn1per.git /opt/Sn1p3r || git -C /opt/Sn1p3r pull
-bash /opt/Sn1p3r/install.sh
+git clone https://github.com/1N3/Sn1per.git /opt/Sn1p3r || git -C /opt/Sn1per pull
+bash /opt/Sn1per/install.sh
