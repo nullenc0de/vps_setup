@@ -65,6 +65,16 @@ export GOPATH=/opt/subjack
 go get github.com/haccer/subjack
 ln -s /opt/subjack/bin/subjack /usr/local/bin/subjack
 
+#gwdomains
+export GOPATH=/opt/gwdomains
+go get -u github.com/fuzzerk/gwdomains
+ln -s /opt/fff/bin/gwdomains /usr/local/bin/gwdomains
+
+#tok
+export GOPATH=/opt/tok
+go get -u github.com/tomnomnom/hacks/tok
+ln -s /opt/fff/bin/tok /usr/local/bin/tok
+
 #fff
 export GOPATH=/opt/fff
 go get -u github.com/tomnomnom/hacks/fff
