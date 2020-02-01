@@ -60,6 +60,22 @@ cd ..
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+export GOPATH=/opt/filter-resolved
+go get -u github.com/tomnomnom/hacks/filter-resolved
+ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
+
+export GOPATH=/opt/tko-subs
+go get github.com/anshumanbh/tko-subs
+ln -s /opt/tko-subs/bin/tko-subs /usr/local/bin/tko-subs
+
+export GOPATH=/opt/webanalyze
+go get -u github.com/rverton/webanalyze
+ln -s /opt/webanalyze/bin/webanalyze /usr/local/bin/webanalyze
+
+export GOPATH=/opt/otxurls
+go get -u github.com/lc/otxurls
+ln -s /opt/otxurls/bin/otxurls /usr/local/bin/otxurls
+
 #subjack
 export GOPATH=/opt/subjack
 go get github.com/haccer/subjack
