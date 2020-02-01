@@ -69,12 +69,16 @@ go get github.com/anshumanbh/tko-subs
 ln -s /opt/tko-subs/bin/tko-subs /usr/local/bin/tko-subs
 
 export GOPATH=/opt/webanalyze
-go get -u github.com/rverton/webanalyze
+go get -u github.com/rverton/webanalyze/...
 ln -s /opt/webanalyze/bin/webanalyze /usr/local/bin/webanalyze
 
 export GOPATH=/opt/otxurls
 go get -u github.com/lc/otxurls
 ln -s /opt/otxurls/bin/otxurls /usr/local/bin/otxurls
+
+export GOPATH=/opt/qsreplace
+go get -u github.com/tomnomnom/qsreplace
+ln -s /opt/qsreplace/bin/qsreplace /usr/local/bin/qsreplace
 
 #subjack
 export GOPATH=/opt/subjack
