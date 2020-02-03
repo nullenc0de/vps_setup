@@ -64,6 +64,10 @@ export GOPATH=/opt/filter-resolved
 go get -u github.com/tomnomnom/hacks/filter-resolved
 ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
 
+export GOPATH=/opt/get-title
+go get -u github.com/tomnomnom/hacks/get-title
+ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
+
 export GOPATH=/opt/tko-subs
 go get github.com/anshumanbh/tko-subs
 ln -s /opt/tko-subs/bin/tko-subs /usr/local/bin/tko-subs
