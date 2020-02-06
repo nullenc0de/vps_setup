@@ -64,6 +64,10 @@ export GOPATH=/opt/filter-resolved
 go get -u github.com/tomnomnom/hacks/filter-resolved
 ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
 
+export GOPATH=/opt/unfurl
+go get -u github.com/tomnomnom/hacks/unfurl
+ln -s /opt/unfurl/bin/unfurl /usr/local/bin/unfurl
+
 export GOPATH=/opt/get-title
 go get -u github.com/tomnomnom/hacks/get-title
 ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
