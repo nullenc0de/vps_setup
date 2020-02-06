@@ -68,6 +68,10 @@ export GOPATH=/opt/unfurl
 go get -u github.com/tomnomnom/hacks/unfurl
 ln -s /opt/unfurl/bin/unfurl /usr/local/bin/unfurl
 
+export GOPATH=/opt/ffuf
+go get -u github.com/ffuf/ffuf
+ln -s /opt/ffuf/bin/ffuf /usr/local/bin/ffuf
+
 export GOPATH=/opt/get-title
 go get -u github.com/tomnomnom/hacks/get-title
 ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
