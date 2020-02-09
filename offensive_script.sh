@@ -76,6 +76,10 @@ export GOPATH=/opt/get-title
 go get -u github.com/tomnomnom/hacks/get-title
 ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
 
+export GOPATH=/opt/getallurls
+go get -u github.com/lc/hacks/getallurls
+ln -s /opt/getallurls/bin/getallurls /usr/local/bin/getallurls
+
 export GOPATH=/opt/tko-subs
 go get github.com/anshumanbh/tko-subs
 ln -s /opt/tko-subs/bin/tko-subs /usr/local/bin/tko-subs
