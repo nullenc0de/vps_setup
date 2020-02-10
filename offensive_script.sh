@@ -68,6 +68,10 @@ export GOPATH=/opt/unfurl
 go get -u github.com/tomnomnom/hacks/unfurl
 ln -s /opt/unfurl/bin/unfurl /usr/local/bin/unfurl
 
+export GOPATH=/opt/anti-burl
+go get -u github.com/tomnomnom/hacks/anti-burl
+ln -s /opt/anti-burl/bin/anti-burl /usr/local/bin/anti-burl
+
 export GOPATH=/opt/ffuf
 go get -u github.com/ffuf/ffuf
 ln -s /opt/ffuf/bin/ffuf /usr/local/bin/ffuf
