@@ -60,6 +60,10 @@ cd ..
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+export GOPATH=/opt/kxss
+go get -u github.com/tomnomnom/hacks/kxss
+ln -s /opt/kxss/bin/kxss /usr/local/bin/kxss
+
 export GOPATH=/opt/gospider
 go get -u github.com/jaeles-project/gospider
 ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
