@@ -60,6 +60,10 @@ cd ..
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+export GOPATH=/opt/gospider
+go get -u github.com/jaeles-project/gospider
+ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
+
 export GOPATH=/opt/filter-resolved
 go get -u github.com/tomnomnom/hacks/filter-resolved
 ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
