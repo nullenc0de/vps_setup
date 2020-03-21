@@ -137,6 +137,11 @@ export GOPATH=/opt/httprobe
 go get -u github.com/tomnomnom/httprobe
 ln -s /opt/httprobe/bin/httprobe /usr/local/bin/httprobe
 
+# FProbe
+export GOPATH=/opt/fprobe
+go get -u github.com/theblackturtle/fprobe
+ln -s /opt/fprobe/bin/fprobe /usr/local/bin/fprobe
+
 # Waybackurls
 export GOPATH=/opt/waybackurls
 go get -u github.com/tomnomnom/waybackurls
