@@ -108,6 +108,10 @@ export GOPATH=/opt/otxurls
 go get -u github.com/lc/otxurls
 ln -s /opt/otxurls/bin/otxurls /usr/local/bin/otxurls
 
+export GOPATH=/opt/hakrawler
+go get github.com/hakluke/hakrawler
+ln -s /opt/hakrawler/bin/hakrawler /usr/local/bin/hakrawler
+
 export GOPATH=/opt/qsreplace
 go get -u github.com/tomnomnom/qsreplace
 ln -s /opt/qsreplace/bin/qsreplace /usr/local/bin/qsreplace
