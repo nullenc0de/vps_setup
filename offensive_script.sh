@@ -12,10 +12,6 @@ apt install python3-pip -y
 apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
 apt-get install libcurl4-openssl-dev libpcre3-dev libssh-dev -y
 
-#Wapiti
-pip install wapiti3
-pip3 install wapiti3
-
 #screen
 sudo apt-get install screen -y
 
@@ -100,9 +96,9 @@ export GOPATH=/opt/get-title
 go get -u github.com/tomnomnom/hacks/get-title
 ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
 
-export GOPATH=/opt/getallurls
-go get -u github.com/lc/hacks/getallurls
-ln -s /opt/getallurls/bin/getallurls /usr/local/bin/getallurls
+export GOPATH=/opt/gau
+go get -u github.com/lc/gau
+ln -s /opt/gau/bin/gau /usr/local/bin/gau
 
 export GOPATH=/opt/tko-subs
 go get github.com/anshumanbh/tko-subs
