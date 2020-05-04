@@ -64,6 +64,10 @@ export GOPATH=/opt/nuclei
 go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
+export GOPATH=/opt/subjs
+go get -u -v github.com/lc/subjs
+ln -s /opt/subjs/bin/subjs /usr/local/bin/subjs
+
 export GOPATH=/opt/kxss
 go get -u github.com/tomnomnom/hacks/kxss
 ln -s /opt/kxss/bin/kxss /usr/local/bin/kxss
