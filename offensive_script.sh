@@ -56,6 +56,10 @@ cd ..
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+export GOPATH=/opt/ssrf-finder
+go get -u github.com/random-robbie/ssrf-finder
+ln -s /opt/ssrf-finder/bin/ssrf-finder /usr/local/bin/ssrf-finder
+
 export GOPATH=/opt/wildcheck
 go get -u github.com/theblackturtle/wildcheck
 ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
