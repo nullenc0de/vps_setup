@@ -15,6 +15,9 @@ apt-get install libcurl4-openssl-dev libpcre3-dev libssh-dev -y
 #screen
 sudo apt-get install screen -y
 
+Empire
+apt install powershell-empire
+
 #Brutespray
 apt-get install brutespray -y
 
@@ -65,7 +68,7 @@ go get -u github.com/theblackturtle/wildcheck
 ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
 
 export GOPATH=/opt/nuclei
-go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
+get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
 export GOPATH=/opt/subjs
