@@ -68,7 +68,7 @@ go get -u github.com/theblackturtle/wildcheck
 ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
 
 export GOPATH=/opt/nuclei
-get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
 export GOPATH=/opt/subjs
