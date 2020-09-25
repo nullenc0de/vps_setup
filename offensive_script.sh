@@ -56,6 +56,12 @@ cd /opt/LinkFinder
 python3 setup.py install
 cd ..
 
+#cme
+apt-get install python3-venv
+python3 -m pip install pipx
+pipx ensurepath
+pipx install crackmapexec
+
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
