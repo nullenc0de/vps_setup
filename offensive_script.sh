@@ -65,6 +65,10 @@ pipx install crackmapexec
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+export GOPATH=/opt/pentest-tools
+git clone https://github.com/gwen001/pentest-tools.git /opt/pentest-tools
+ln -s /opt/pentest-tools/domain-finder.py /usr/local/bin/domain-finder
+
 export GOPATH=/opt/ssrf-finder
 go get -u github.com/random-robbie/ssrf-finder
 ln -s /opt/ssrf-finder/bin/ssrf-finder /usr/local/bin/ssrf-finder
