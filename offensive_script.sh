@@ -65,6 +65,10 @@ pipx install crackmapexec
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
 
+export GOPATH=/opt/jaeles-project
+go get github.com/jaeles-project/jaeles
+ln -s /opt/jaeles-project/jaeles /usr/local/bin/jaeles
+
 export GOPATH=/opt/pentest-tools
 git clone https://github.com/gwen001/pentest-tools.git /opt/pentest-tools
 ln -s /opt/pentest-tools/domain-finder.py /usr/local/bin/domain-finder
