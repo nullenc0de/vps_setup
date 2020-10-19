@@ -189,7 +189,9 @@ ln -s /opt/waybackurls/bin/waybackurls /usr/local/bin/waybackurls
 export GOPATH=/opt/gf
 go get -u github.com/tomnomnom/gf
 ln -s /opt/gf/bin/gf /usr/local/bin/gf
-#source /opt/gf/src/github.com/tomnomnom/gf/gf-completion.bash
+git clone https://github.com/1ndianl33t/Gf-Patterns /opt/Gf-Patterns || git -C /opt/Gf-Patterns pull
+mkdir ~/.gf
+mv /opt/Gf-Patterns/*.json ~/.gf
 
 # Assetfinder
 export GOPATH=/opt/assetfinder
