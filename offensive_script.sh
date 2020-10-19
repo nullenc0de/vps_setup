@@ -68,6 +68,7 @@ sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || 
 export GOPATH=/opt/jaeles-project
 go get github.com/jaeles-project/jaeles
 ln -s /opt/jaeles-project/bin/jaeles /usr/local/bin/jaeles
+jaeles config init
 
 export GOPATH=/opt/pentest-tools
 git clone https://github.com/gwen001/pentest-tools.git /opt/pentest-tools
