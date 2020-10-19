@@ -56,6 +56,9 @@ cd /opt/LinkFinder
 python3 setup.py install
 cd ..
 
+apt install -y npm
+npm install -g source-map-unpack
+
 #cme
 apt-get install python3-venv
 python3 -m pip install pipx
