@@ -60,10 +60,11 @@ apt install -y npm
 npm install -g source-map-unpack
 
 #cme
-apt-get install python3-venv
-python3 -m pip install pipx
-pipx ensurepath
-pipx install crackmapexec
+#apt-get install python3-venv
+#python3 -m pip install pipx
+#pipx ensurepath
+#pipx install crackmapexec
+apt install crackmapexec
 
 #tehbucketeer
 sudo git clone https://github.com/abhaybhargav/bucketeer.git  /opt/bucketeer || git -C /opt/bucketeer pull
