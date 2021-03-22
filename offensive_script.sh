@@ -12,6 +12,15 @@ apt install python3-pip -y
 apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
 apt-get install libcurl4-openssl-dev libpcre3-dev libssh-dev -y
 
+# FINDOMAIN
+wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
+chmod +x findomain-linux
+mv findomain-linux findomain
+sudo mv findomain /usr/bin/
+
+# DNSGEN
+pip3 install dnsgen
+
 #screen
 sudo apt-get install screen -y
 
