@@ -114,6 +114,11 @@ ln -s /opt/kxss/bin/kxss /usr/local/bin/kxss
 export GOPATH=/opt/gospider
 go get -u github.com/jaeles-project/gospider
 ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
+wget https://github.com/jaeles-project/gospider/releases/download/1.1.5/gospider_1.1.5_linux_x86_64.zip
+unzip gospider_1.1.5_linux_x86_64.zip
+rm gospider_1.1.5_linux_x86_64.zip
+mv gospider_1.1.5_linux_x86_64/gospider /opt/gospider/bin/gospider
+rm -rf gospider_1.1.5_linux_x86_64
 
 export GOPATH=/opt/filter-resolved
 go get -u github.com/tomnomnom/hacks/filter-resolved
@@ -250,6 +255,11 @@ git clone https://github.com/s0md3v/XSStrike.git /opt/xsstrike || git -C /opt/xs
 pip3 install -r /opt/xsstrike/requirements.txt
 ln -s /opt/xsstrike/xsstrike.py /usr/local/bin/xsstrike
 chmod +x /usr/local/bin/xsstrike
+
+#slackcat
+wget https://github.com/bcicen/slackcat/releases/download/1.7.1/slackcat-1.7.1-linux-amd64
+mv slackcat-1.7.1-linux-amd64 /usr/local/bin/slackcat
+chmod +x /usr/local/bin/slackcat
 
 #Configure MSF
 sudo service postgresql start
