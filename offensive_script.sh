@@ -237,7 +237,7 @@ ln -s /opt/dirsearch/dirsearch.py /usr/local/bin/dirsearch
 chmod +x /usr/local/bin/dirsearch
 
 # Seclist
-git clone https://github.com/danielmiessler/SecLists.git /opt/dirsearch || git -C /opt/dirsearch pull
+git clone https://github.com/danielmiessler/SecLists.git /opt/SecLists || git -C /opt/SecLists pull
 
 # SubBrute
 git clone https://github.com/TheRook/subbrute.git /opt/subbrute || git -C /opt/subbrute pull
