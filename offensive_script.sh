@@ -86,6 +86,8 @@ jaeles config init
 export GOPATH=/opt/pentest-tools
 git clone https://github.com/gwen001/pentest-tools.git /opt/pentest-tools
 ln -s /opt/pentest-tools/domain-finder.py /usr/local/bin/domain-finder
+pip3 install -r /opt/pentest-tools/requirements2.txt
+pip3 install -r /opt/pentest-tools/requirements3.txt
 
 export GOPATH=/opt/ssrf-finder
 go get -u github.com/random-robbie/ssrf-finder
