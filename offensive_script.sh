@@ -89,6 +89,10 @@ ln -s /opt/pentest-tools/domain-finder.py /usr/local/bin/domain-finder
 pip3 install -r /opt/pentest-tools/requirements2.txt
 pip3 install -r /opt/pentest-tools/requirements3.txt
 
+export GOPATH=/opt/bbscope
+go get -u github.com/sw33tLie/bbscope
+ln -s /opt/bbscope/bin/bbscope /usr/local/bin/bbscope
+
 export GOPATH=/opt/ssrf-finder
 go get -u github.com/random-robbie/ssrf-finder
 ln -s /opt/ssrf-finder/bin/ssrf-finder /usr/local/bin/ssrf-finder
