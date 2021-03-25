@@ -98,7 +98,7 @@ go get -u github.com/random-robbie/ssrf-finder
 ln -s /opt/ssrf-finder/bin/ssrf-finder /usr/local/bin/ssrf-finder
 
 export GOPATH=/opt/httpx
-go get -u github.com/projectdiscovery/httpx/cmd/httpx
+GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
 ln -s /opt/httpx/bin/httpx /usr/local/bin/httpx
 
 export GOPATH=/opt/wildcheck
