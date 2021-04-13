@@ -109,6 +109,10 @@ export GOPATH=/opt/nuclei
 go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
+export GOPATH=/opt/dnsx
+go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
+ln -s /opt/dnsx/bin/dnsx /usr/local/bin/dnsx
+
 export GOPATH=/opt/subjs
 go get -u -v github.com/lc/subjs
 ln -s /opt/subjs/bin/subjs /usr/local/bin/subjs
