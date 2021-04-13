@@ -113,6 +113,10 @@ export GOPATH=/opt/dnsx
 go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
 ln -s /opt/dnsx/bin/dnsx /usr/local/bin/dnsx
 
+export GOPATH=/opt/mapcidr
+go get -v github.com/projectdiscovery/mapcidr/cmd/mapcidr
+ln -s /opt/mapcidr/bin/mapcidr /usr/local/bin/mapcidr
+
 export GOPATH=/opt/subjs
 go get -u -v github.com/lc/subjs
 ln -s /opt/subjs/bin/subjs /usr/local/bin/subjs
