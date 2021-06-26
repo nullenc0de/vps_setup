@@ -275,6 +275,11 @@ pip3 install -r /opt/striker/requirements.txt
 ln -s /opt/striker/striker.py /usr/local/bin/striker
 chmod +x /usr/local/bin/striker
 
+#github search
+git clone https://github.com/gwen001/github-search.git || git -C /opt/github-search pull
+pip3 install -r /opt/github-search/requirements2.txt
+pip3 install -r /opt/github-search/requirements3.txt
+
 # XSStrike
 git clone https://github.com/s0md3v/XSStrike.git /opt/xsstrike || git -C /opt/xsstrike pull
 pip3 install -r /opt/xsstrike/requirements.txt
