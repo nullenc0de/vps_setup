@@ -142,6 +142,10 @@ export GOPATH=/opt/unfurl
 go get -u github.com/tomnomnom/hacks/unfurl
 ln -s /opt/unfurl/bin/unfurl /usr/local/bin/unfurl
 
+export GOPATH=/opt/puredns
+go get -u github.com/d3mondev/puredns/v2
+ln -s /opt/puredns/bin/puredns /usr/local/bin/puredns
+
 export GOPATH=/opt/cidr2ip
 go get -u github.com/codeexpress/cidr2ip
 ln -s /opt/cidr2ip/bin/cidr2ip /usr/local/bin/cidr2ip
@@ -257,6 +261,13 @@ git clone https://github.com/danielmiessler/SecLists.git /opt/SecLists || git -C
 git clone https://github.com/TheRook/subbrute.git /opt/subbrute || git -C /opt/subbrute pull
 ln -s /opt/subbrute/subbrute.py /usr/local/bin/subbrute
 chmod +x /usr/local/bin/subbrute
+
+# Massdns
+git clone https://github.com/blechschmidt/massdns.git /opt/massdns || git -C /opt/massdns pull
+cd massdns
+make
+make install
+cd ..
 
 # Striker
 git clone https://github.com/s0md3v/Striker.git /opt/striker || git -C /opt/striker pull
