@@ -221,6 +221,11 @@ export GOPATH=/opt/waybackurls
 go get -u github.com/tomnomnom/waybackurls
 ln -s /opt/waybackurls/bin/waybackurls /usr/local/bin/waybackurls
 
+#goaltdns
+export GOPATH=/opt/goaltdns
+go get -u github.com/subfinder/goaltdns
+ln -s /opt/goaltdns/bin/goaltdns /usr/local/bin/goaltdns
+
 # Gf
 export GOPATH=/opt/gf
 go get -u github.com/tomnomnom/gf
