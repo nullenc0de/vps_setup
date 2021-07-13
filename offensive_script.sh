@@ -263,6 +263,13 @@ chmod +x /usr/local/bin/dirsearch
 # Seclist
 git clone https://github.com/danielmiessler/SecLists.git /opt/SecLists || git -C /opt/SecLists pull
 
+#dnsvalidator
+git clone https://github.com/vortexau/dnsvalidator.git || git -C /opt/dnsvalidator pull
+cd dnsvalidator
+pip3 install -r requirements.txt
+python3 setup.py install
+cd ..
+
 # SubBrute
 git clone https://github.com/TheRook/subbrute.git /opt/subbrute || git -C /opt/subbrute pull
 ln -s /opt/subbrute/subbrute.py /usr/local/bin/subbrute
