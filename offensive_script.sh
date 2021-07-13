@@ -5,6 +5,7 @@ wget https://gist.githubusercontent.com/nullenc0de/96fb9e934fc16415fbda2f83f08b2
 wget https://gist.githubusercontent.com/nullenc0de/538bc891f44b6e8734ddc6e151390015/raw/a6cb6c7f4fcb4b70ee8f27977886586190bfba3d/passwords.txt -O /root/gist/passwords.txt
 wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -O /root/gist/all.txt
 wget https://gist.githubusercontent.com/nullenc0de/9cb36260207924f8e1787279a05eb773/raw/0197d33c073a04933c5c1e2c41f447d74d2e435b/params.txt -O /root/gist/params.txt
+wget https://gist.githubusercontent.com/nullenc0de/5dbc5a9c653a03fccfcea4f030a47442/raw/21cac60c3a781b694a37009c89ebd7930aaa061a/altdns.txt -O /root/gist/altdns.txt
 
 #update
 apt update
