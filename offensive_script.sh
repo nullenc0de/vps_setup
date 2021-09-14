@@ -151,9 +151,13 @@ export GOPATH=/opt/cidr2ip
 go get -u github.com/codeexpress/cidr2ip
 ln -s /opt/cidr2ip/bin/cidr2ip /usr/local/bin/cidr2ip
 
-export GOPATH=/opt//anti-burl
+export GOPATH=/opt/anti-burl
 go get -u github.com/tomnomnom/hacks/anti-burl
-ln -s /opt/anti-burl/bin/anti-burl /usr/local/bin//anti-burl
+ln -s /opt/anti-burl/bin/anti-burl /usr/local/bin/anti-burl
+
+export GOPATH=/opt/interactsh
+go get -u github.com/projectdiscovery/interactsh/cmd/interactsh-client
+ln -s /opt/interactsh/bin/interactsh /usr/local/bin/interactsh
 
 export GOPATH=/opt/ffuf
 go get -u github.com/ffuf/ffuf
