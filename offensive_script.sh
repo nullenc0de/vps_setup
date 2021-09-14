@@ -157,7 +157,7 @@ ln -s /opt/anti-burl/bin/anti-burl /usr/local/bin/anti-burl
 
 export GOPATH=/opt/interactsh
 go get -u github.com/projectdiscovery/interactsh/cmd/interactsh-client
-ln -s /opt/interactsh/bin/interactsh /usr/local/bin/interactsh
+ln -s /opt/interactsh/bin/interactsh-client /usr/local/bin/interactsh-client
 
 export GOPATH=/opt/ffuf
 go get -u github.com/ffuf/ffuf
