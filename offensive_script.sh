@@ -126,6 +126,10 @@ export GOPATH=/opt/kxss
 go get -u github.com/tomnomnom/hacks/kxss
 ln -s /opt/kxss/bin/kxss /usr/local/bin/kxss
 
+export GOPATH=/opt/cswsh-scanner
+go get -v -u github.com/ambalabanov/cswsh-scanner/...
+ln -s /opt/cswsh-scanner/bin/cswsh-scanner /usr/local/bin/cswsh-scanner
+
 export GOPATH=/opt/gospider
 go get -u github.com/jaeles-project/gospider
 ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
