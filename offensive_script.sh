@@ -130,6 +130,10 @@ export GOPATH=/opt/cswsh-scanner
 go get -v -u github.com/ambalabanov/cswsh-scanner/...
 ln -s /opt/cswsh-scanner/bin/cswsh-scanner /usr/local/bin/cswsh-scanner
 
+export GOPATH=/opt/naabu
+go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+ln -s /opt/naabu/bin/naabu /usr/local/bin/naabu
+
 export GOPATH=/opt/gospider
 go get -u github.com/jaeles-project/gospider
 ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
