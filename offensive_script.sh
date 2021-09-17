@@ -12,6 +12,7 @@ apt update
 apt install python3-pip -y
 apt-get install python3-venv libxml2 libxml2-dev libz-dev libxslt1-dev python3-dev -y
 apt-get install libcurl4-openssl-dev libpcre3-dev libssh-dev -y
+apt-get install libpcap-dev
 
 # FINDOMAIN
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux
