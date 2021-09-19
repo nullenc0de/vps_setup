@@ -168,6 +168,10 @@ export GOPATH=/opt/interactsh
 go get -u github.com/projectdiscovery/interactsh/cmd/interactsh-client
 ln -s /opt/interactsh/bin/interactsh-client /usr/local/bin/interactsh-client
 
+export GOPATH=/opt/goverview
+go get github.com/j3ssie/goverview
+ln -s /opt/goverview/bin/goverview /usr/local/bin/goverview
+
 export GOPATH=/opt/ffuf
 go get -u github.com/ffuf/ffuf
 ln -s /opt/ffuf/bin/ffuf /usr/local/bin/ffuf
