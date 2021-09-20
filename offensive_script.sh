@@ -244,6 +244,10 @@ export GOPATH=/opt/goaltdns
 go get -u github.com/subfinder/goaltdns
 ln -s /opt/goaltdns/bin/goaltdns /usr/local/bin/goaltdns
 
+export GOPATH=/opt/httpx2bbrf
+go get -v -u github.com/z0mb13s3c/httpx2bbrf
+ln -s /opt/httpx2bbrf/bin/httpx2bbrf /usr/local/bin/httpx2bbrf
+
 # Gf
 export GOPATH=/opt/gf
 go get -u github.com/tomnomnom/gf
