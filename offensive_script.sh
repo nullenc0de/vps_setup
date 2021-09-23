@@ -148,6 +148,10 @@ export GOPATH=/opt/filter-resolved
 go get -u github.com/tomnomnom/hacks/filter-resolved
 ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
 
+export GOPATH=/opt/dalfox
+GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
+ln -s /opt/dalfox/bin/dalfox /usr/local/bin/dalfox
+
 export GOPATH=/opt/unfurl
 go get -u github.com/tomnomnom/hacks/unfurl
 ln -s /opt/unfurl/bin/unfurl /usr/local/bin/unfurl
