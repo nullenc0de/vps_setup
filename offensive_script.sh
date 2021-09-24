@@ -67,11 +67,8 @@ cd /opt/LinkFinder
 python3 setup.py install
 cd ..
 
-git clone https://github.com/projectdiscovery/nuclei.git
-cd nuclei/v2/cmd/nuclei/
-go build .
-mv nuclei /usr/local/bin
-cd ../../../..
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+ln -s /root/go/bin/nuclei /usr/local/bin/nuclei
 
 apt install -y npm
 npm install -g source-map-unpack
