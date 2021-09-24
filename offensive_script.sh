@@ -67,6 +67,12 @@ cd /opt/LinkFinder
 python3 setup.py install
 cd ..
 
+git clone https://github.com/projectdiscovery/nuclei.git
+cd nuclei/v2/cmd/nuclei/
+go build .
+mv nuclei /usr/local/bin
+cd ../../../..
+
 apt install -y npm
 npm install -g source-map-unpack
 
@@ -106,10 +112,6 @@ ln -s /opt/httpx/bin/httpx /usr/local/bin/httpx
 export GOPATH=/opt/wildcheck
 go get -u github.com/theblackturtle/wildcheck
 ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
-
-export GOPATH=/opt/nuclei
-go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
-ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
 export GOPATH=/opt/dnsx
 go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
